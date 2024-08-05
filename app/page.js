@@ -67,7 +67,8 @@ export default function Home() {
       flexDirection={"column"}
       justifyContent={"center"}
       alignItems={"center"}
-      gap={2}>
+      gap={2}
+      bgcolor="black">
         <Modal
           open={open}
           onClose={handleClose}
@@ -78,7 +79,7 @@ export default function Home() {
               top="50%"
               left="50%"
               width={400}
-              bgcolor="white"
+              bgcolor="black"
               border="2px solid #000"
               boxShadow={24}
               p={4}
@@ -130,14 +131,14 @@ export default function Home() {
           <Box
             width="800px"
             height="100px"
-            bgcolor="#ADD8E6"
+            bgcolor="blue"
             display="flex"
             alignItems="center"
             justifyContent="center"
           >
             <Typography 
               variant="h2"
-              color="#333"
+              color="silver"
             >
               Inventory Items
             </Typography>
@@ -160,14 +161,14 @@ export default function Home() {
                   pading={5}>
                     <Typography
                       variant="h3"
-                      color="#333"
+                      color="silver"
                       textAlign="center"
                       >
                         {name.charAt(0).toUpperCase() + name.slice(1)}
                       </Typography>
                       <Typography
                       variant="h3"
-                      color="#333"
+                      color="silver"
                       textAlign="center"
                       >
                        {quantity}
